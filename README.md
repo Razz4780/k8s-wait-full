@@ -1,3 +1,11 @@
+# Usage
+
+Basic usage: `k8s-wait-full Deployment my-deployment -f - < deployment-filter.yaml`
+
+Run `k8s-wait-full --help` for more options.
+
+# State filter
+
 Example state filter:
 
 ```yaml
