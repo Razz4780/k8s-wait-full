@@ -1,0 +1,16 @@
+[package]
+name = "k8s-wait-full"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+clap =  { version = "4.5.4", features = ["derive"] }
+futures = "0.3.30"
+kube = { version = "0.91.0", features = ["runtime"] }
+k8s-openapi = { version = "0.22.0", features = ["latest"] }
+serde_json = "1.0.117"
+serde_yaml = "0.9.34"
+tokio = { version = "1.37.0", features = ["rt", "macros", "fs", "io-util"] }
